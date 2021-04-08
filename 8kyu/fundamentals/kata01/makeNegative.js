@@ -4,7 +4,6 @@ function makeNegative(num) {
   return -Math.abs(num);
 }
 
-console.log('exercise 1')
 console.log(makeNegative(1)); // return -1
 console.log(makeNegative(-5)); // return -5
 console.log(makeNegative(0)); // return 0
