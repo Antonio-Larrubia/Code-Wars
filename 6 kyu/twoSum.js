@@ -8,18 +8,18 @@
 
 function twoSum(numbers, target) {
   let res = []
-  numbers.sort();
   let i = 0;
   let j = 1;
-  while (res.length == 0 && numbers[i] <= target) {
-    while (res.length == 0 && numbers[j] <= target) {
-      if(numbers[i] + numbers[j] === target) {
+  while (res.length === 0 && i < numbers.length) {
+    while(j < numbers.length) {
+      if ((numbers[i] + numbers[j]) === target) {
         res.push(i)
         res.push(j)
       }
       j++
     }
-    i++;
+    i++
+    j = i+1
   }
   return res;
 }
