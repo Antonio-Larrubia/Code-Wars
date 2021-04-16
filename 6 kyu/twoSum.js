@@ -7,33 +7,13 @@
 // Based on: http://oj.leetcode.com/problems/two-sum/
 
 function twoSum(numbers, target) {
-  let res = []
-  let i = 0;
-  let j = 1;
-  while (res.length === 0 && i < numbers.length) {
-    while(j < numbers.length) {
-      if ((numbers[i] + numbers[j]) === target) {
-        res.push(i)
-        res.push(j)
-      }
-      j++
-    }
-    i++
-    j = i+1
-  }
-  return res;
-}
-
-console.log(twoSum([1,2,3], 4)) //[0,2]
-console.log(twoSum([1234,5678,9012], 14690)) // [1,2]
-console.log(twoSum([2,2,3], 4)) //[0,1]
-
-//Better way
-
-function twoSum(numbers, target) {
   for (var i = 0; i < numbers.length-1; i++) {
       for (var j = i+1; j < numbers.length; j++) {
           if (numbers[i] + numbers[j] === target) return [i, j];
       }
   }
 }
+
+console.log(twoSum([1,2,3], 4)) //[0,2]
+console.log(twoSum([1234,5678,9012], 14690)) // [1,2]
+console.log(twoSum([2,2,3], 4)) //[0,1]

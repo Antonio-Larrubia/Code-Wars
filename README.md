@@ -1,3 +1,4 @@
 # Code-Wars
 
-Code Wars JavaScript challenges
+Code Wars practice Javascript challenges.
+
