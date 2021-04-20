@@ -2,4 +2,4 @@
 
 Code Wars practice Javascript challenges.
 
-Currently on 6th kyu.
+Currently on 5th kyu.
