@@ -12,22 +12,20 @@
 // For 4 or more names, the number in and 2 others simply increases.
 
 function likes(names) {
-    str = "likes this"
-    let strOfNames = ""
+    let str = "like this"
     if (Array.isArray(names) && names.length) {
         if (names.length === 1) {
-            str = names[0] +" "+ str;
+            str = names[0] +" "+ "likes this";
         }
         else if (names.length > 1 && names.length < 4) {
-            let i = 0;
-            while (i < names.length) {
-                strOfNames += names[i]
-                if (i != names.length-1) {
-                    strOfNames += ", "
+            let strOfNames = names[0]
+            for (let i = 1; i < names.length; i++) {
+                if(i < names.length-1) 
+                strOfNames += ", " +names[i]
+                else {
+                    strOfNames += " and "+names[i]+" "
                 }
-                i++
             }
-            strOfNames += " and " + names[names.length-1]
             str = strOfNames + str
         }
         else {
@@ -35,13 +33,13 @@ function likes(names) {
         }
     }
     else {
-        str = "no one "+str;
+        str = "no one likes this";
     }
     return str;
 }
 
-console.log(likes ([])) //-- must be "no one likes this"
-console.log(likes (["Peter"])) //-- must be "Peter likes this"
+//console.log(likes ([])) //-- must be "no one likes this"
+//console.log(likes (["Peter"])) //-- must be "Peter likes this"
 console.log(likes (["Jacob", "Alex"])) //-- must be "Jacob and Alex like this"
 console.log(likes (["Max", "John", "Mark"])) //-- must be "Max, John and Mark like this"
 console.log(likes (["Alex", "Jacob", "Mark", "Max"])) //-- must be "Alex, Jacob and 2 others like this"
