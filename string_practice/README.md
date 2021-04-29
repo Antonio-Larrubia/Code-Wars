@@ -1,0 +1,1 @@
+Javascript strings practice
