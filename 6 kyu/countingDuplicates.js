@@ -16,7 +16,7 @@ function duplicateCount(text){
     return text
         .split("")
         .sort()
-        .map((count,letter) => {
+        .reduce((count,letter) => {
             
         })
 }
