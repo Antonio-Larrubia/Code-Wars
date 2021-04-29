@@ -13,12 +13,18 @@ Example
 */
 
 function duplicateCount(text){
-    return text
-        .split("")
-        .sort()
-        .reduce((count,letter) => {
-            
-        })
+    let i = 0, count =0
+    let arr = text.toLowerCase().split("").sort()
+    while (i < arr.length) {
+        if(arr[i] === arr[i+1]) {
+            count++
+            while (arr[i] === arr[i+1] && i < arr.length) {
+                i++
+            }
+        }
+        i++
+    }
+    return count;
 }
 
 console.log(duplicateCount(""))
