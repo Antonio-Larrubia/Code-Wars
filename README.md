@@ -1,6 +1,6 @@
 # Code Wars
 
-https://www.codewars.com/users/Telefang/badges/micro
+<img src="https://www.codewars.com/users/Telefang/badges/micro"></img>
 
 Code Wars practice Javascript challenges.
 Profile:
