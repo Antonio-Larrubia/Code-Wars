@@ -1,5 +1,7 @@
 # Code Wars
 
-Code Wars practice Javascript challenges.
+<img src="https://www.codewars.com/users/Telefang/badges/small"></img>
 
-Currently on 5th kyu.
+Code Wars practice Javascript challenges.
+Profile:
+https://www.codewars.com/users/Telefang
