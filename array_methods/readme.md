@@ -30,13 +30,16 @@ map(function callbackFn(element, index, array) { ... }, thisArg)
   
   The current element being processed in the array.
     
-   **indexOptional**
-    The index of the current element being processed in the array.
+  **indexOptional**
+  
+  The index of the current element being processed in the array.
     
-   **arrayOptional**
-    The array map was called upon.
+  **arrayOptional**
+  
+  The array map was called upon.
 
 **thisArgOptional**
+
   Value to use as this when executing callbackFn.
 
 ### Time complexity
