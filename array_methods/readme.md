@@ -26,21 +26,22 @@ map(function callbackFn(element, index, array) { ... }, thisArg)
   Function that is called for every element of `arr`. Each time `callbackFn` executes, the returned value is added to `newArray`.
   The `callbackFn` function accepts the following arguments:
   
-    **element**
+  **element**
+  
+  The current element being processed in the array.
     
-        The current element being processed in the array.
+   **indexOptional**
+    The index of the current element being processed in the array.
     
-    **indexOptional**
-    
-        The index of the current element being processed in the array.
-    
-    **arrayOptional**
-    
-        The array map was called upon.
+   **arrayOptional**
+    The array map was called upon.
 
 **thisArgOptional**
+  Value to use as this when executing callbackFn.
 
-    Value to use as this when executing callbackFn. 
+### Time complexity
+
+O(n) being n the number of items in the array.
 
 ## reduce
 ## filter
