@@ -30,3 +30,15 @@ let reformattedArray = kvArray.map(obj => {
 // [{key: 1, value: 10},
 //  {key: 2, value: 20},
 //  {key: 3, value: 30}]
+
+//Mapping an array of numbers using a function containing an argument
+
+//The following code shows how map works when a function requiring one argument is used with it. The argument will automatically be assigned from each element of the array as map loops through the original array.
+
+let numbers = [1, 4, 9]
+let doubles = numbers.map(function(num) {
+  return num * 2
+})
+
+// doubles is now   [2, 8, 18]
+// numbers is still [1, 4, 9]
