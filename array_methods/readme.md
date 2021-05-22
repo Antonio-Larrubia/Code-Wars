@@ -52,6 +52,15 @@ The `reduce()` method executes a reducer function (that you provide) on each ele
 
 ### Syntax
 
+The reducer function takes four arguments:
+<ol>
+    <li>Accumulator</li>
+    <li>Current Value</li>
+    <li>Current Index</li>
+    <li>Source Array</li>
+</ol>
+Your reducer function's returned value is assigned to the accumulator, whose value is remembered across each iteration throughout the array, and ultimately becomes the final, single resulting value.
+
 ```javascript
 // Arrow function
 reduce((accumulator, currentValue) => { ... } )
