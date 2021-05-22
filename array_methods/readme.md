@@ -46,7 +46,7 @@ map(function callbackFn(element, index, array) { ... }, thisArg)
 
 O(n) being n the number of items in the array.
 
-## reduce
+## Array.prototype.reduce()
 
 The `reduce()` method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
 
