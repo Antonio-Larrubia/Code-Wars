@@ -47,6 +47,30 @@ map(function callbackFn(element, index, array) { ... }, thisArg)
 O(n) being n the number of items in the array.
 
 ## reduce
+
+The `reduce()` method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+
+### Syntax
+
+```javascript
+// Arrow function
+reduce((accumulator, currentValue) => { ... } )
+reduce((accumulator, currentValue, index) => { ... } )
+reduce((accumulator, currentValue, index, array) => { ... } )
+reduce((accumulator, currentValue, index, array) => { ... }, initialValue)
+
+// Reducer function
+reduce(reducerFn)
+reduce(reducerFn, initialValue)
+
+// Inline reducer function
+reduce(function reducerFn(accumulator, currentValue) { ... })
+reduce(function reducerFn(accumulator, currentValue, index) { ... })
+reduce(function reducerFn(accumulator, currentValue, index, array){ ... })
+reduce(function reducerFn(accumulator, currentValue, index, array) { ... }, initialValue)
+```
+
+
 ## filter
 ## forEach
 ## sort
