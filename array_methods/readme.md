@@ -79,8 +79,9 @@ reduce(function reducerFn(accumulator, currentValue, index, array){ ... })
 reduce(function reducerFn(accumulator, currentValue, index, array) { ... }, initialValue)
 ```
 
+## Array.prototype.filter()
 
-## filter
+
 ## forEach
 ## sort
 ## slice
